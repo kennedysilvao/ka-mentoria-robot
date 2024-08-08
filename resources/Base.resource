@@ -2,6 +2,9 @@
 Documentation    Configurações iniciais
 
 Library    Browser
+Library    libs/gerador_de_massa.py
+Resource    pages/Cadastro.resource
+Resource    pages/Login.resource
 
 *** Keywords ***
 Iniciar Browser
