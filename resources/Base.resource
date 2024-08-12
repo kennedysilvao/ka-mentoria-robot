@@ -5,6 +5,8 @@ Library    Browser
 Library    libs/gerador_de_massa.py
 Resource    pages/Cadastro.resource
 Resource    pages/Login.resource
+Resource    pages/Home.resource
+Resource    helpers/Helper.resource
 
 *** Keywords ***
 Iniciar Browser
