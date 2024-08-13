@@ -20,7 +20,7 @@ Marcar o checkbox de administrador
 Submeter cadastro
     Click    css=button >> text=Cadastrar
 
-Validar mensagem de campo obrigatorio
+Validar mensagem de alerta
     [Arguments]    ${expected_message}
 
     Get Text    css=span >> text=${expected_message}

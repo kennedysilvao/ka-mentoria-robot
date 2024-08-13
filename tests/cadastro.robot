@@ -45,7 +45,7 @@ Caso de teste 02: Campo nome deve ser obrigatório
     Marcar o checkbox de administrador
     Submeter cadastro
 
-    Validar mensagem de campo obrigatorio    Nome é obrigatório
+    Validar mensagem de alerta    Nome é obrigatório
     
 
 Caso de teste 03: Campo email deve ser obrigatório
@@ -64,7 +64,7 @@ Caso de teste 03: Campo email deve ser obrigatório
     Marcar o checkbox de administrador
     Submeter cadastro
 
-    Validar mensagem de campo obrigatorio    Email é obrigatório
+    Validar mensagem de alerta    Email é obrigatório
     
 
 Caso de teste 04: Campo password deve ser obrigatório
@@ -83,5 +83,5 @@ Caso de teste 04: Campo password deve ser obrigatório
     Marcar o checkbox de administrador
     Submeter cadastro
 
-    Validar mensagem de campo obrigatorio    Password é obrigatório
+    Validar mensagem de alerta    Password é obrigatório
     
