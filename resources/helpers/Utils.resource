@@ -7,12 +7,14 @@ Resource    ../Base.resource
 Realizar cadastro e fazer login
     ${nome}    Gerar Nome
     ${email}    Gerar Email
-
     ${user}    Create Dictionary
     ...    nome=${nome}
     ...    email=${email}
     ...    password=pwd123
     ...    administrador=true
+    
+    Set Test Variable    ${user}
+
     Criar sessão
     Criar um usuário    ${user}
 

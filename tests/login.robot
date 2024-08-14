@@ -22,6 +22,12 @@ Caso de teste 01: Deve realizar login com sucesso
     ...    administrador=true
     Criar sessão
     Criar um usuário    ${user}
+    
+    ${test}    Create Dictionary
+    ...    email=${email}
+    ...    password=pwd123
+    
+    Fazer login pela API    ${test}
 
     Validar que estou na página de login
     Preencher campos de login    ${user}[email]    ${user}[password]

@@ -19,11 +19,19 @@ Caso de teste 01: Deve cadastrar um produto com sucesso
     ...    quantity=5
 
     Realizar cadastro e fazer login
+
+    ${user_api}    Create Dictionary
+    ...    email=${user}[email]
+    ...    password=${user}[password]
+
+    Criar sessão
+    Fazer login pela API    ${user_api}
+
+    Buscar produto por nome    ${product}[name]
+    Deletar produto por ID    ${product_id}
+
     Acessar formulário de cadastro de produto
-    
     Validar que estou na página de produtos
     Preencher campos do produto    ${product}[name]    ${product}[price]    ${product}[description]    ${product}[quantity]
     Submeter cadastro de produto
     Validar que produto foi cadastrado com sucesso    ${product}[name]
-
-    Sleep    7
